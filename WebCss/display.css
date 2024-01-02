@@ -1,0 +1,65 @@
+#block{
+    border: 1px solid blue;
+    /* width: 200px;
+    height: 200px; */
+    display: inline;
+}
+
+#inline{
+    border: 1px solid brown;
+    /* width:300px; */
+    display: block;
+}
+
+/* both inline and block-level behaviour,element takes inline content and can change with height and width   */
+#inline-block{
+    border: 2px solid yellow;
+    height: 200px;
+    width: 200px;
+    display: inline-block;  
+}
+
+h3{
+    border: 2px solid black;
+    display: inline;
+}
+
+nav{
+    border: 2px solid black;
+    height:100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.max{
+    border: 2px solid red;
+    height: 50px;
+    width: 60px;
+}
+
+#nav1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.max01{
+    border: 2px solid orange;
+    height: 20px;
+    width: 20px;
+    
+}
+
+.max02{
+    border: 2px solid orangered;
+    height: 20px;
+    width: 20px;
+}
+
+#nav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

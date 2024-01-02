@@ -1,0 +1,43 @@
+/* target */
+
+[target="p1"]{
+    background-color: brown;
+}
+
+[myp="p2"]{
+    background-color: red;
+}
+
+[max="p3"]{
+    background-color: purple;
+}
+
+
+/* title */
+
+[title~="rio"]{
+    background-color: orangered;
+}
+
+[title~="kio"]{
+background-color: aquamarine;
+}
+
+/* class */
+
+/* targets classname value before eiphens */
+[class^="kio"]{
+    background-color: brown;
+}
+
+[class$="kio"]{
+    background-color:  gray;
+}
+
+[class*="z"]{
+    background-color: coral;
+}
+
+[class|="jio"]{
+    background-color: khaki;
+}

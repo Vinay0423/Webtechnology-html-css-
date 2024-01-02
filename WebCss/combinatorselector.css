@@ -1,0 +1,30 @@
+
+/* descendant selector (targets both direct and indirect child) */ 
+
+div p{
+    background-color: green;
+}
+
+/* child selector (targets only direct child)*/
+#nan>h2{
+    background-color: red;
+}
+
+/* adjacent sibling (targets next matching first sibling) */
+h3+p{
+    background-color: grey;
+}
+
+/* general sibling (targets next all matching sibling) */
+h4~p{
+    background-color: blue;
+}
+
+
+div h3{
+    background-color: black;
+}
+
+div h1{
+    background-color: yellow;
+}

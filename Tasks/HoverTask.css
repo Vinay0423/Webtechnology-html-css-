@@ -1,0 +1,23 @@
+div{
+height: 300px;
+width: 300px;
+    border: 2px solid black;
+    background-image: url("../Photos/istockphoto-1404885250-1024x1024.webp");
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+
+div:hover{
+    background-image: url("../Photos/istockphoto-1482050909-612x612.jpg");
+}
+
+nav{
+    border: 2px solid purple;
+    height: 50px;
+}
+
+
+
+
+
+

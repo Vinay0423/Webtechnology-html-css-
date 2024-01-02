@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container h1{
+            background-color: red;
+        }
+
+        div.inside-container>p{
+            color: chocolate;
+        }
+
+        div.inside-container+p{
+            background-color: aqua;
+        }
+
+        div.inside-container~p{
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Im in container</h1>
+        <div class="inside-container">
+          <p>Isndb</p>
+          <p>kadska</p>
+        </div>
+        <P>adjacent sibling</P>
+        <P>second sibling</P>
+        <P>third sibling</P>
+      </div>
+  
+</body>
+</html>

@@ -1,0 +1,35 @@
+div#nan{
+   border: 2px solid red;
+  /* border-radius: 20px;   modify the curves of the border */
+   border-top-left-radius: 50px;  /* modify the top-left border */
+   border-color: chartreuse; /* modify the color */
+   border-width: 30px;  /* modify th width of color */
+   border-bottom: 10px solid black ; /* modify only border bottom */
+   display: flex;
+   /* align-items: center; */
+   justify-content: center;
+   border-spacing:20px 20px;
+}
+
+div#sec{
+   border: 10px solid blue;
+   border-spacing: 20px;
+  border-style: double; /* styling of border line */
+  border-style: dashed;
+  border-style: ridge;
+}
+
+p{
+   text-decoration:underline; /* under the text */
+   text-decoration:line-through;
+   /* text-align: right; starts from right side */
+   text-align:end;
+   text-transform:uppercase ;
+   text-transform:lowercase ;
+   text-transform: capitalize;
+   text-shadow: 2px 2px 2px ; 
+   font-size: 20px;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 900;
+   font-display: block ;
+}

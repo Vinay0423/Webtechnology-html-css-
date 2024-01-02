@@ -1,0 +1,39 @@
+p::first-line{
+    background-color: red;
+}
+
+
+p::first-letter{
+    font-size: 50px;
+    
+}
+
+h1::before{
+    /* all text and images should be used using content property */
+    content: "Im before the content, ";
+    color: chartreuse;
+}
+
+h1::after{
+    content: " ,Im after the content.";
+    color: darkblue;
+}
+
+p::selection{
+    background-color: yellow;
+}
+
+P:hover{
+    font-size: 20px;
+    background-color: green;
+}
+
+li::marker{
+    color: rgb(233, 68, 23);
+}
+
+li{
+    list-style: upper-roman;
+    
+}
+

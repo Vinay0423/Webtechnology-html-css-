@@ -1,0 +1,14 @@
+h1{
+    background-color:orange;
+    color: red;
+    text-align: center;
+    width: 300px;
+    align-items:stretch;
+}
+
+h2{
+    background-color: chocolate;
+    color: chartreuse;
+    text-align: center;
+    width: 300px;
+}

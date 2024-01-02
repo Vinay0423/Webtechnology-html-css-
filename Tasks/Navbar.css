@@ -1,0 +1,60 @@
+#main{
+    border: 2px solid red;
+    height: 100vh;
+    background-image: url('../Photos/Car-Drifting-GIF-4k.gif')  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#navbar{
+    /* border:2px solid blue; */
+    height:25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+
+#subnav1{
+    /* border: 2px solid brown; */
+    height: 60px;
+    width: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
+
+#subnav2{
+    /* border: 2px solid brown; */
+    height: 60px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu{
+    /* border:2px solid greenyellow;    */
+    height: 40px;
+    width:70px;
+    display: flex;
+}
+
+.icons{
+    /* border:2px solid greenyellow; */
+    height: 40px;
+    width:50px;
+}
+
+.menu:hover{
+    border-bottom: 4px solid blue;
+}
+
+.icons:hover{
+    border-bottom: 4px solid blue;
+}
+
+hr{
+   width: 900px;
+}

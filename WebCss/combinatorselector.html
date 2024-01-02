@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./combinatorselector.css" />
+  </head>
+  <body>
+
+    <!-- decendant selector -->
+    <div>
+      <p>First</p>
+      <p>Second</p>
+      <nav>
+        <p>Indirect</p>
+      </nav>
+
+      <h1>
+        <p>Indirect</p>
+      </h1>
+    </div>
+
+    <!-- child selector -->
+    <div id="nan">
+      <h2>First child</h2>
+      <h2>Second child</h2>
+      <span><h2>Indirect child</h2></span>
+      <span> <h2>Indirect child</h2></span>
+    </div>
+
+
+
+    <!-- adjacent selector   -->
+    <h3>...Ref sibling...</h3>
+    <p>Adjacent  sibling to h3</p>
+    <p>second Sibling to  h3</p>
+
+
+    <!-- general selector--> 
+    <h4>...Ref sibling...</h4>
+    <p>Adjacent  sibling to h3</p>
+    <h1>Adjacent sibling to h3</h1>
+    <p>second Sibling to  h3</p>
+    <p> first Sibling to  h3</p>
+    <p>second Sibling to  h3</p>
+
+
+    <div>
+        <h1> dIRECT CHILD
+            <h2>
+                <h3>
+                    uatsuutuadsuduatd
+                </h3>
+            </h2>
+        </h1>
+
+        <nav>
+            <h1>Indirect Child</h3>
+        </nav>
+    </div>
+  </body>
+</html>

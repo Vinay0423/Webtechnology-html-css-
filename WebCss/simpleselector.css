@@ -1,0 +1,33 @@
+
+/* id */
+#max{
+    background-color: red;
+}
+
+#nan{
+    background-color: aquamarine;
+}
+
+/* class */
+.leo{
+    
+    background-color: greenyellow;
+}
+
+/* tagname */
+nav{
+    background-color: chocolate;
+}
+
+/* groupall */
+
+#max,#nan,.leo,nav{
+    color: blue;
+
+}
+
+/* universal */
+
+*{
+    background-color: gray;
+}

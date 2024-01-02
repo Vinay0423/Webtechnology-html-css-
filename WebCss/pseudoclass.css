@@ -1,0 +1,43 @@
+
+a:link{
+    color: red;
+    
+}
+
+/* change color when user visited to link */
+a:visited{
+    color: purple;
+    background-color: aquamarine;
+}
+
+a:hover{
+    color: orangered;
+}
+
+/* change to green color when user clicks */
+a:active{
+    color: limegreen;
+}
+
+p:first-child{
+    background-color: red;
+}
+
+p:last-child{
+    background-color: brown;
+}
+
+/* selects 2nd child */
+p:nth-child(2){
+    background-color: orange;
+}
+
+/* selects 3rd child */
+p:nth-child(3){
+    background-color: yellow;
+}
+
+nav>p{
+    background-color: red;
+
+}
