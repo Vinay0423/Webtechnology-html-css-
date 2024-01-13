@@ -1,54 +1,74 @@
 #main{
-    border: 2px solid red;
-    height: 100vh;
-    background-image: url('../Photos/Car-Drifting-GIF-4k.gif')  ;
+    /* background-image: url('../Photos/Car-Drifting-GIF-4k.gif')  ; 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
-
+body{
+    width: 1010px;
+    margin: 0px 0px 0px 0px;
+}
+#backgroundvideo01{
+    background-size: cover;
+    position: relative;
+    width: 1010px;
+}
 #navbar{
     /* border:2px solid blue; */
     height:25vh;
+    width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    position: absolute;
+    top:-20px;
+    z-index: 2;
+   
 
 }
 
 #subnav1{
     /* border: 2px solid brown; */
     height: 60px;
-    width: 500px;
+    width: 600px;
         display: flex;
-        justify-content: space-around;
+        justify-content:space-between;
         align-items: center;
+      
+       
 }
 
 #subnav2{
     /* border: 2px solid brown; */
     height: 60px;
-    width: 200px;
+    width: 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .menu{
     /* border:2px solid greenyellow;    */
     height: 40px;
-    width:70px;
+    width:30px;
     display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    /* padding: 0; */
+    /* margin-left: -10px ; */
+    padding: -10px;
 }
 
 .icons{
     /* border:2px solid greenyellow; */
-    height: 40px;
-    width:50px;
+    height: 30px;
+    width:30px;
 }
 
 .menu:hover{
     border-bottom: 4px solid blue;
+    color:red;
 }
 
 .icons:hover{
@@ -56,5 +76,160 @@
 }
 
 hr{
-   width: 900px;
+   width: 94%;
+   position: absolute;
+   z-index: 1;
+   top: 60px;  
+   left: 30px;
+  
+}
+
+.logo{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#logo img{
+    width: 60px;
+    height: 40px;
+   padding-top: 0px;
+   color: white;
+   margin-top: -15px;
+}
+
+
+#icons1 i,#icons2 i,#icons3 i{
+    font-size: 20px;
+    color: rgb(234, 240, 240);
+}
+
+#icons1 i:hover,#icons2 i:hover,#icons3 i:hover{
+    color:skyblue;
+}
+
+#video-text{
+    height: 50%;
+    position: absolute;
+    top: 300px;
+    left:70px;
+}
+
+#bmwix1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 50px;
+    font-size: 50px;
+}
+
+#dicover{
+    background-color: #1c69d4;
+    width: 150px;
+    height: 50px;
+    font-weight: 700;
+    border-radius: 5px;
+    
+}
+
+#video-text,#dicover{
+    color: white;
+   
+}
+
+#main02{
+    height: 100px;
+    position: sticky;
+    width: 400px;
+}
+
+#video-text02{
+    position: relative;
+    top:-220px;
+    color: white;
+    left: 30px;
+}
+
+
+#bmwx5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 50px;
+    font-size: 50px;
+}
+
+span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#configure{
+    background-color: #1c69d4;
+    width: 150px;
+    height: 40px;
+    font-weight: 700;
+    border-radius: 5px;
+     color: white;
+}
+
+#knowmore{
+    width: 150px;
+    height: 40px;
+    
+    border-radius: 5px;
+
+    border-color: #f2f2f2;
+    background-color: #0000;    
+    color: #f2f2f2;
+    
+}
+
+#backgroundvideo02{
+    background-size: cover;
+    position: relative;
+   width: 1010px;
+}
+
+section#main03{
+    position: relative ;
+    top: 500px;
+  
+}
+
+h3{
+    font-family: sans-serif;
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#caricons{
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+#caricons01 img,#caricons02 img,#caricons03 img{
+   margin-left: -50px;
+}
+
+#searchnow,#requesttestdrive,#configureprice{
+    height: 27px;
+    border: 1px solid black;
+    background-color: #0000;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+img{
+    width: 250px;
+    height: 150px;
+}
+
+#menu1,#menu2,#menu3{
+    width: 60px;
+}
+#menu5,#menu4{
+    width: 100px;
 }

@@ -1,0 +1,60 @@
+/* div#linear{
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(to right, #e1288e ,black 70% ,purple) ;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div#circle{
+    border-radius: 50%;
+    height: 70vh;
+    width: 35vw;
+    position: absolute;
+    left: 320px;
+    top: 100px;
+    background-image: linear-gradient(#60084b 60%, rgb(181, 25, 25) );
+}
+
+div#background{
+    background-image: linear-gradient(to left,#a91a8f 10%,#852424 30%, #490c3e 80%);
+    height: 100vh;
+
+    /* if first color percentage is 10% and second color percentage is 20% then only second color will be shown if the color is 5% the second color will not shown,if color lesser than the previous color , the current color will not shown. */
+}
+#commingsoon{
+position: absolute;
+color: white;
+left: 40vw;
+top:150px;
+font-size: 30px;
+}
+
+#time{
+
+    position:absolute;
+    color: white;
+    font-size: 50px;
+    top: 200px;
+}
+
+#timer{
+    display: block;
+    position: relative;
+    left: 200px;
+    font-size: 130px;
+}
+
+#units{
+    position: relative;
+    top: -10px;
+    left: 22vw;
+    font-size: 20px;
+    font-weight: 100;
+    word-spacing: 120px;
+    
+}
+
