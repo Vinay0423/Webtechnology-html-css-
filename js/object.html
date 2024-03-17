@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objects</h1>
+    <script>
+
+// Instead of sending the individual variables to other uses , we can bind all properties in one object and can send the object literal for easy use.
+
+//How to create objects
+let obj= {
+    name: 'vinay',
+    age:26,
+    place:'tumkur'
+}
+
+//to fetch
+console.log(obj.name); 
+// or
+console.log(obj['name']);
+
+//to add new property
+console.log(obj.number=81286862812);
+console.log(obj['number']);
+console.log(obj);
+
+// to update
+console.log(obj.age=25);
+console.log(obj['age']);
+console.log(obj);
+
+//to delete
+delete obj.number;
+console.log(obj['number']);
+console.log(obj);
+
+//nested ojects
+
+let myDetails={
+    name: "vinay",
+    dob:'23/02/98',
+    educations:{
+        school:"sjes",
+        intermediate:"vpu",
+        engineering:"cit"
+    }
+}
+
+console.log(myDetails.name);
+console.log(myDetails.educations.engineering);
+console.log(myDetails.educations.intermediate='vijaya pu ');
+console.log(myDetails.educations.intermediate);
+
+// creating and adding to object using constructor
+let myObj= new Object()
+myObj.name='xyz'
+myObj.age='26'
+console.log(myObj)
+
+
+//Object Methods
+
+//1. assign - to combine all the objects into one
+
+let ob1={
+    name:'vinay',
+    age:26
+} 
+
+let ob2={
+    place:'bengaluru',
+    email:'xyz@gmail.com'
+}
+
+let assign= Object.assign(ob1,ob2)
+console.log(assign);
+
+
+//2. freeze - it will stop object being altered
+
+let freezeObj= {
+    food:'biryani',
+    quality:1
+}
+
+console.log(freezeObj.food='chicken biryani');  //food: chicken biyrani
+
+let freezeIt= Object.freeze(freezeObj)
+console.log(freezeObj.food='curd rice');
+console.log(freezeIt);
+delete freezeIt.food;
+console.log(freezeIt.food + ' deleted or not');
+
+//3.entries- it will converts object to array
+let myEntry=Object.entries(freezeObj)
+console.log(myEntry);
+
+
+//4. keys - gives only keys of object
+
+let myKeys= Object.keys(freezeObj)
+console.log(myKeys);
+
+
+//5.values -gives only values of object
+
+let myValues= Object.values(freezeObj)
+console.log(myValues);
+
+//6.isFroozen- validates whether object is freezed or not
+
+let froozen= Object.isFrozen(freezeObj)
+let froozen01= Object.isFrozen(freezeIt)
+console.log(froozen);
+console.log(froozen01);
+
+
+// object destructuring - to convert key and values into individual variables
+
+let myDesObj={
+    members:100,
+    male:10,
+    female:90
+}
+
+console.log(myDesObj.female*10);
+
+let {members,male,female}= myDesObj;
+let {mem,mal,femal}= myDesObj;
+
+console.log(members);
+console.log(male);
+console.log(female);
+console.log(mem);
+console.log(mal);
+console.log(femal);
+
+
+//Date object
+
+let date= new Date()
+console.log(date);
+
+console.log(typeof date); //object
+console.log(typeof Date); //function
+
+console.log(date.getDate());
+console.log(date.getFullYear());
+console.log(date.getMonth()); //month starts from 0
+console.log(date.getHours());
+console.log(date.getMinutes());
+console.log(date.getSeconds());
+console.log(date.getUTCDate());
+console.log(date.getTime());
+
+
+//Math object
+
+console.log(Math.floor(12.36)); //12 - gives the previous number
+console.log(Math.floor(19.78)); //12
+
+console.log(Math.ceil(34.3)); //35 - gives the  next  number
+console.log(Math.ceil(54.9)); //35 - gives the  next  number
+
+console.log(Math.round(86.7)); //87 - it will round off
+
+console.log(Math.sqrt(16)); //4
+console.log(Math.cbrt(27)); //3
+
+function random(x){
+    for(let rep=0;rep<=x;rep++){
+    let x=+ Math.round((Math.random()*1000))
+    console.log(x);
+    }
+}
+random()
+
+
+// setTimeout(()=> {
+//     console.log('it will print after 2 seconds');
+// },2000)
+// setInterval(()=> {
+//     console.log('it will print every 2 seconds');
+// },2000)
+
+
+setTimeout(()=> {
+    console.log('first');
+},4000)
+
+setTimeout(()=> {
+    console.log('second');
+},1000)
+
+setTimeout(()=> {
+    console.log('third');
+},5000)
+
+setTimeout(()=> {
+    console.log('fourth');
+},3000)
+
+
+let b= setInterval(()=> {
+    console.log('print every four second');
+},4000)
+
+clearInterval(b)
+clearTimeout()
+
+
+
+
+
+    </script>
+</body>
+</html>

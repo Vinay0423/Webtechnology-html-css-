@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions 02</h1>
+    <script>
+        
+
+        function gp(){
+            let a=100;
+            let b=20;
+            function p(){
+                let x=240;
+                let y=36
+                console.log(a,b);
+                function c() {
+                    let p=12;
+                    console.log(a,b);
+                    console.log(x,y);
+                    function cl() {
+                        console.log(p);
+                        let pq=120;
+                        function cl1(){
+                            console.log(pq);
+                            console.log(a,b);
+                    console.log(x,y);
+                        }
+                        return cl1;
+                    }
+                    return cl;
+                }
+                return c;
+            }
+            return p;
+        }
+
+        gp()()()()()
+
+
+
+        //when using normal function in object it is pointing to the current object
+        let myFun={
+            city:'electronic',
+            country:'india',
+            status: function(){
+                return myFun.city;
+            }
+        }
+
+        console.log(myFun.status());
+
+        let myFun01={
+            city1:'electronic',
+            country1:'india',
+            status1: ()=>{
+                // return myFun01.city1;
+                console.log(myFun01.country1);
+            }
+        }
+
+       myFun01.status1();
+    </script>
+</body>
+</html>

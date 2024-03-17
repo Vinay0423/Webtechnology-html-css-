@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Typecasting</h1>
+    <script>
+//points to be remember
+// '-' throws number
+// once concat with operator '+' it will concat till same operator ends or go on concat till same operator
+// true=1 ,false =0, null=0, undefined=nan
+
+
+        //implict
+        // console.log(2+'2'+2-1+2);
+        // console.log(5+'3');
+        // console.log(5+'3'-2);
+        // console.log(5+'3'-2+2);
+        // console.log(2-'hi');
+        // console.log(undefined+2+10)
+        // console.log(undefined-2)
+
+        // //explict
+        // let a= String(10);
+        // console.log(a);
+
+        // let c=String(10);
+        // console.log(c, typeof c);
+
+        // let t=Boolean(10);
+        // console.log(t,typeof t);
+        
+        // let t1=Boolean(-10);
+        // console.log(t1,typeof t1);
+
+        // let t2=Boolean('helo');
+        // console.log(t2,typeof t2);
+
+        // let b= Number('1')
+        // console.log(b,typeof b);
+
+        //Number to other datatype
+
+        // let num1= String(10)
+        // console.log(num1, typeof num1);
+
+        // let num2= Boolean(10)
+        // console.log(num2, typeof num2);
+
+        // let num3= null(10)
+        // console.log(num3, typeof num3);
+
+        // let num4= undefined(10)
+        // console.log(num4, typeof num4);
+
+        let num5= BigInt(10)
+        console.log(num5, typeof num5);
+
+
+        //String  to other datatype
+           
+        // let str1= Number('10')
+        // console.log(str1, typeof str1);
+
+        // let str01= Number('hii')
+        // console.log(str01, typeof str01);
+
+        // let str2 = Boolean('10')
+        // console.log(str2, typeof str2);
+
+        // let str02 = Boolean('Hiii')
+        // console.log(str02, typeof str02);
+
+
+        // let str3= null('10')
+        // console.log(str3, typeof str3);
+
+        //  let str4 = undefined('10')
+        //  console.log(str4, typeof str4);
+
+        
+        let str5 = BigInt('10')
+        console.log(str5, typeof str5);
+
+       
+
+        
+        //Null to other datatype
+
+        //  let n01= String(null)
+        //  console.log(n01, typeof n01);
+
+        //  let n02= Number(null)
+        //  console.log(n02, typeof n02);
+
+
+        //  let n03= Boolean(null)
+        //  console.log(n03, typeof n03);
+
+
+        //  let n04= undefined(null)
+        //  console.log(no4, typeof no4);
+
+        // let n05= BigInt(null)
+        // console.log(n05, typeof n05);
+
+        
+         //Undefined to other type
+
+
+        //  let un01= String(undefined)
+        //  console.log(un01, typeof un01);
+
+        //  let un02= Number(undefined)
+        //  console.log(un02, typeof un02);
+
+
+        //  let un03= Boolean(undefined)
+        //  console.log(un03, typeof un03);
+
+        //  let str6= BigInt(undefined)
+        // console.log(str6, typeof str6);
+
+        //  let un04= null(undefined)
+        //  console.log(uno4, typeof uno4);
+
+
+
+        //Boolean to other type
+
+        let bool1= Boolean(10n)
+        console.log(bool1, typeof bool1);
+
+        let bool2= Boolean('10')
+        console.log(bool2, typeof bool2);
+    </script>
+</body>
+</html>

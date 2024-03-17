@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Functions</h1>
+    <script>
+      //Functions
+      // anonymous function
+      // named  function
+      // function with Expression
+      // first class expression
+      // arrow function
+      // immediate invoking function expression
+      // call back function
+      // higher order function
+      // nested function
+      // generator function
+
+      // syntax
+      // function functionname(){}
+
+      // 1.anonymous function-  function doesn't have name
+
+      // function (){
+      //     console.log('no function name');
+      // }
+
+      // there are 3 ways to call anonymous function
+      // 1.named fun 2.func with expression  3. iife
+
+      // 2.named function- function having function name
+
+      function demo() {
+        console.log("hello");
+      }
+      demo();
+
+      // 3.function with expression
+      let a = function () {
+        console.log("function with expression");
+      };
+      a(),
+        // 4. firstclass function - function passing as value to variable or expression
+
+        // 5.iife - 1. iife wont pollute the global variable  2. we can't write iife without using comma to earlier function, it is possibly by taking comma in between  3.after invoking we should call
+        (function () {
+          console.log("iife");
+        })();
+
+      //  6. arrow function-
+      let arrow = () => {
+        console.log("arrow function");
+      };
+
+      arrow();
+
+      //rules of arrow functions
+      //1. No need of braces when there is single statement
+      // 2. need braces when there is a multiple statement
+      let funAr = () => console.log("no need of braces");
+      funAr();
+      // 3. when return statement is there must and should need to use console log
+      let funcArr = (a, b) => {
+        return a + b;
+      };
+      console.log(funcArr(2, 4));
+      // 4. when log statement already used in the function no need to use log statement while invoking the function
+      let arrFunc = (p, q) => {
+        console.log(p * q);
+      };
+      //  console.log(arrFunc(4,5)); wrong
+      arrFunc(3, 6);
+
+      // ex:
+      let add = (a, b) => {
+        console.log(a + b, ` addition `);
+      };
+      let sub = (a, b) => {
+        console.log(a - b, ` subtraction`);
+      };
+      let mul = (a, b) => {
+        console.log(a * b, `mul`);
+      };
+      let div = (a, b) => {
+        console.log(a / b, `division `);
+      };
+      add(2, 3);
+      sub(5, 3);
+      mul(5, 3);
+      div(15, 3);
+
+      //7. Callback function - afunction which is passed as arguements to another function
+
+      function demo1(calback, name) {
+        calback();
+        console.log("function demo" + name);
+      }
+
+      function test() {
+        console.log("function test");
+      }
+
+      demo1(test, "hello");
+
+      //8. high order function  - a function which accepts the another function as a arguement
+
+      function adding(x, y) {
+        return x + y;
+      }
+
+      function multiplying(x, y) {
+        return x * y;
+      }
+
+      function result(operation, x, y) {
+        return operation(x, y);
+      }
+
+      const result1 = result(adding, 4, 2);
+      console.log(result1, " adding");
+      const result2 = result(multiplying, 4, 2);
+      console.log(result2, " multiplying");
+
+      //8. nested function - function within a function
+      // lexical scope : it is js enginee behaviour that will check the variable in current scope if not present it will check for outer scope.
+      //closure: it holds the data  of the previous function
+
+      function result01(){
+        console.log('hiiii');
+      }
+    </script>
+  </body>
+</html>
