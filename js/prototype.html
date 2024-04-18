@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prototype</h1>
+
+    <script>
+
+let obj= {
+age:26,
+place:'bengaluru'
+}
+
+
+let obj1={
+    id:395,
+    name:'vinay'
+}
+
+let obj2={
+    email:'abc@gmail.com'
+}
+
+
+obj.__proto__=obj1;   //creating the obj1 prototype for obj
+obj1.__proto__=obj2;  //creating the obj2 prototype for obj1
+
+console.log(obj);
+console.log(obj.id);  // accessing obj1 data with obj
+console.log(obj.email); // accessing obj2 data with obj
+
+
+
+    </script>
+</body>
+</html>

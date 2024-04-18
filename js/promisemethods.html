@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      let promise1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("resolved 1");
+        }, 3000);
+      });
+
+      let promise2 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          // resolve('resolved 1')
+          reject ("resolved 2");
+        }, 1000);
+      });
+
+      let promise3 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("resolved 3");
+        }, 1500);
+      });
+      //all-- to get all resolved promises
+      Promise.all([promise1, promise2, promise3])
+        .then((data) => {
+          console.log("resolved statement", data);
+        })
+        .catch((err) => {
+          console.log("rejected statement", err);
+        });
+
+      //any-- to get first occurred resolved statement
+      Promise.any([promise1, promise2, promise3])
+        .then((data) => {
+          console.log("resolved statement", data);
+        })
+        .catch((err) => {
+          console.log("rejected statement", err);
+        });
+
+        //race-- to get first occurrence  either resolved or reject 
+        Promise.race([promise1, promise2, promise3])
+        .then((data) => {
+          console.log("resolved statement", data);
+        })
+        .catch((err) => {
+          console.log("rejected statement", err);
+        });
+
+        // allsettled-- to get object status with value
+        Promise.allSettled([promise1, promise2, promise3])
+        .then((data) => {
+          console.log("resolved statement", data);
+        })
+        
+
+
+    </script>
+  </body>
+</html>

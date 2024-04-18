@@ -90,7 +90,7 @@ let freezeObj= {
 console.log(freezeObj.food='chicken biryani');  //food: chicken biyrani
 
 let freezeIt= Object.freeze(freezeObj)
-console.log(freezeObj.food='curd rice');
+console.log(freezeIt.food='curd rice');
 console.log(freezeIt);
 delete freezeIt.food;
 console.log(freezeIt.food + ' deleted or not');
@@ -160,11 +160,12 @@ console.log(date.getTime());
 
 //Math object
 
-console.log(Math.floor(12.36)); //12 - gives the previous number
-console.log(Math.floor(19.78)); //12
+console.log(Math.abs(23.6));
+console.log(Math.floor(12.76)); //12 - gives the previous number
+console.log(Math.floor(19.99)); //12
 
 console.log(Math.ceil(34.3)); //35 - gives the  next  number
-console.log(Math.ceil(54.9)); //35 - gives the  next  number
+console.log(Math.ceil(54.9)); //55 - gives the  next  number
 
 console.log(Math.round(86.7)); //87 - it will round off
 

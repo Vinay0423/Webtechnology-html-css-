@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="user">UserName:</label>
+    <input type="text" id="user">
+
+    <br> <br>
+    <label for="pass">Password:</label>
+    <input type="text" id="pass">
+
+    <button onclick="">Submit</button>
+
+    <script>
+
+let addevent= document.querySelector('button')
+addevent.addEventListener(('click'), ()=> {
+    let sec= document.createElement('h1')
+    sec.innerText=' new h1'
+
+    let user= document.getElementById('user').value;
+    let password=document.getElementById('pass').value;
+
+    let valueIS= `${user} ${password}`
+    console.log(valueIS);
+
+    document.body.appendChild(sec)
+
+    sec.innerHTML=valueIS
+    sec.style.background='orange'
+})
+
+    </script>
+</body>
+</html>

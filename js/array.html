@@ -32,9 +32,58 @@
         arr4.shift()
         console.log(arr4);
 
+    let myArray=[12,34,44,134,1,13,4,54,4545]
 
-        let str= 'hello world good morning'
-        // console.log(str.slice(1));
+    //to sort in ascending and descending order
+    console.log(myArray.sort());
+
+    let compare= (a,b)=> {
+        return a-b;
+    }
+
+    console.log(myArray.sort(compare))  // ascending order
+
+    let descompare= (a,b)=> {
+        return b-a;
+    }
+console.log(myArray.some(descompare));
+
+//reverse
+console.log(myArray.reverse());
+
+//it converts array into string
+console.log(myArray.join(' '));
+
+//splice - it is an array method which takes 3 arguement, 1st is an starting index , 2nd is an how much element want to remove, 3rd is elements to be add
+//the action using splice will affect the main array.
+
+console.log(myArray.splice(2,2)); // it removes the two array starting from 2th index and next 1 index value
+console.log(myArray); 
+console.log(myArray.splice(1,1,23,2433,45,45,5,465,4));
+console.log(myArray); 
+console.log(arr);
+
+let myArray1= [2,34,43,23]
+console.log(myArray1.splice(1));
+console.log(myArray1);
+
+//map - opertaion on single element
+
+let a=[3,4,15,6,19]
+
+let map=a.map((p)=> {
+    return p*10;
+})
+console.log(map); // multiple values *10
+
+let reduce=a.reduce((p,q)=>{ return p+q})
+console.log(reduce);  //add all values 
+
+let filter = a.filter((p)=> {
+return p>10
+})
+
+console.log(filter); // gives values that is greater than 10
     </script>
 </body>
 </html>

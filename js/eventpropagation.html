@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        #gp{
+           width: 400px;
+           height: 400px;
+           border: 1px solid #ae00ff;
+        }
+
+        #p{
+           width: 300px;
+           height: 300px;
+           border: 1px solid red;
+        }
+        #c{
+           width: 200px;
+           height: 200px;
+           border: 1px solid rgb(0, 255, 42);
+        }
+    </style>
+</head>
+<body>
+    <div id="gp">grand parent
+        <div id="p">parent
+            <div id="c">child</div>
+        </div>
+    </div>
+
+
+    <script>
+
+        let gp= document.getElementById('gp')
+        gp.addEventListener('click',()=> {
+            console.log('grand parent clicked');
+        })
+
+        let p= document.getElementById('p')
+        p.addEventListener('click',()=> {
+            console.log(' parent clicked');
+        })
+
+        let c= document.getElementById('c')
+        c.addEventListener('click',()=> {
+            console.log('child clicked');
+        })
+
+        //By default event bubbling is happened
+//when granparent is clicked,only grandparent will show
+// when parent is clicked, first parent will show then grandprent
+//when child is clicked, first child then parent followed by grandparent
+
+// to avoid the event propagation we use stoppropagation()- 
+let c1= document.getElementById('c')
+        c.addEventListener('click',(e)=> {
+            console.log('child clicked');
+            e.stopPropagation()
+        })
+        
+//whenever stoppropagation() is used the only pointed/respective element will be returned, no parents or grandparents will be returned
+//because it will stop the upward flow
+//in the event bubbling elements will be returned from downflow. ex: child--- parent ---- grandparent
+
+
+
+    </script>
+</body>
+</html>

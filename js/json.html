@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Json</h1>
+
+    <script>
+        
+        let obj={
+            id:395,
+            age:26,
+            name:'vinay'
+        }
+
+        console.log(obj, typeof obj);
+
+       let stringFy= JSON.stringify(obj)
+       console.log(stringFy, typeof stringFy);  //{"id":395,"age":26,"name":"vinay"} string
+
+
+       let parse= JSON.parse(stringFy)
+       console.log(parse, typeof parse); //{id: 395, age: 26, name: 'vinay'} 'object'
+
+    </script>
+</body>
+</html>

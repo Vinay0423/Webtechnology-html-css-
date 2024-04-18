@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Key Evnts</h1>
+    <input type="text" id="inputs">
+
+
+    <script>
+
+
+let keyUp=document.getElementById('inputs')
+keyUp.addEventListener('keyup',()=> {
+    console.log('Key Up/lifted');
+})
+
+
+let keyDown=document.getElementById('inputs')
+keyDown.addEventListener('keydown',()=> {
+    console.log('Keydown/pressing');
+})
+    </script>
+</body>
+</html>

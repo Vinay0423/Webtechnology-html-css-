@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="user">UserName:</label>
+        <input type="text" id="user">
+    
+        <br> <br>
+        <label for="pass">Password:</label>
+        <input type="text" id="pass">
+    
+        <br> <br>
+        <button onclick="">Submit</button>
+
+        <section></section>
+    </form>
+
+    <script>
+
+let btn= document.querySelector('button')
+
+btn.addEventListener(('click'),(e)=> {
+    
+    let user= document.getElementById('user').value;
+    let password=document.getElementById('pass').value;
+    
+    let valueIS= `${user} ${password}`
+    console.log(valueIS);
+    
+    // let sec= document.createElement('h1')
+    // sec.innerText=' new h1'
+    // document.body.appendChild(sec)
+
+    let sec= document.querySelector('section')
+
+    sec.innerHTML=valueIS
+    sec.style.background='orange'
+    e.preventDefault()
+})
+
+
+//when we use form tag and if we want to print input values after clicking a button, the value will disappear 
+// soon from the webpage. To prevent these problem we use preventdefault()- it will prevent form send values to backend 
+    </script>
+</body>
+</html>

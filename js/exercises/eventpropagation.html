@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        #gp{
+           width: 400px;
+           height: 400px;
+           border: 1px solid #ae00ff;
+        }
+
+        #p{
+           width: 300px;
+           height: 300px;
+           border: 1px solid red;
+        }
+        #c{
+           width: 200px;
+           height: 200px;
+           border: 1px solid rgb(0, 255, 42);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="gp">grand parent
+        <div id="p">parent
+            <div id="c">child</div>
+        </div>
+    </div>
+
+    <script>
+
+        //event propagation- event bubbling will happens when useCapture sets false to addEventListener
+          let gp= document.getElementById('gp')
+        gp.addEventListener('click',()=> {
+            console.log('grand parent bubbling clicked');
+        })
+
+        let p= document.getElementById('p')
+        p.addEventListener('click',()=> {
+            console.log(' parent  bubbling clicked');
+        })
+
+        let c= document.getElementById('c')
+        c.addEventListener('click',()=> {
+            console.log('child bubbling clicked');
+        })
+
+
+        //event propagation- event capturing will happens when useCapture sets true to addEventListener
+          let gp1= document.getElementById('gp')
+        gp1.addEventListener('click',()=> {
+            console.log('grand parent capturing clicked');
+        },true)
+
+        let p1= document.getElementById('p')
+        p1.addEventListener('click',()=> {
+            console.log(' parent  capturing clicked');
+        },true)
+
+        let c1= document.getElementById('c')
+        c1.addEventListener('click',()=> {
+            console.log('child capturing clicked');
+        },true)
+    </script>
+</body>
+</html>

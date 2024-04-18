@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Events</h1>
+    <button onclick="clickingButton()" >Click Me</button>
+
+   <script>
+
+//3 ways in using events
+
+//1.
+function clickingButton(){
+   document.querySelector('button').innerText='button clicked'
+}
+
+//2.
+
+let btn= document.querySelector('button')
+btn.onclick=()=> {
+    document.body.style.background='blue'
+}
+
+
+//3. using addeventlistner
+
+let btn1= document.querySelector('button')
+
+btn1.addEventListener('click', ()=> {
+    document.body.style.background='brown'
+})
+
+//
+let btn2= document.querySelector('button')
+
+btn2.onclick=()=> {
+ let cl2=   document.createElement('h1')
+ document.body.appendChild(cl2)
+ cl2.innerText='Newly created'
+ cl2.style.background='blue'
+
+}
+
+
+
+
+   </script>
+</body>
+</html>

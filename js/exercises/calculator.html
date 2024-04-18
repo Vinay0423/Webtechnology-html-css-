@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+      }
+
+      #layout {
+        border: 2px solid red;
+        text-align: center;
+        width: 25%;
+        height: 50%;
+        position: relative;
+        border-radius: 20px;
+        background-color: rgb(197, 78, 9);
+      }
+
+      input {
+        background-color: gray;
+        display: inline-block;
+        width: 85%;
+        height: 60px;
+        border-radius: 15px;
+        border-color: brown;
+        margin-top: 30px;
+        font-size: 50px;
+      }
+
+      div {
+        margin: 30px;
+        font-size: 50px;
+        background-color: aqua;
+        height: 80px;
+      }
+
+      span {
+        border: 1px solid black;
+        display: inline-block;
+        width: 80px;
+        background-color: rgb(0, 255, 64);
+        border-radius: 20px;
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="layout">
+      <input type="text" id="display" />
+
+      <div class="row1">
+        <span class="data" onclick="toDisplay(1)">1</span>
+        <span class="data" onclick="toDisplay(2)">2</span>
+        <span class="data" onclick="toDisplay(3)">3</span>
+        <span class="data" onclick="toDisplay('+')">+</span>
+      </div>
+
+      <div class="row2">
+        <span class="data" onclick="toDisplay(4)">4</span>
+        <span class="data" onclick="toDisplay(5)">5</span>
+        <span class="data" onclick="toDisplay(6)">6</span>
+        <span class="data" onclick="toDisplay('-')">-</span>
+      </div>
+
+      <div class="row3">
+        <span class="data" onclick="toDisplay(7)">7</span>
+        <span class="data" onclick="toDisplay(8)">8</span>
+        <span class="data" onclick="toDisplay(9)">9</span>
+        <span class="data" onclick="toDisplay('*')">*</span>
+      </div>
+
+      <div class="row4">
+        <span class="data" onclick="toCalculate()">=</span>
+        <span class="data" onclick="toDisplay(0)">0</span>
+        <span class="data" onclick="toClear()">del</span>
+        <span class="data" onclick="toDisplay('/')">/</span>
+      </div>
+    </div>
+
+    <script>
+      let display = document.getElementById("display");
+
+
+      function toDisplay(data) {
+        display.value += data;
+      }
+
+      function toClear() {
+        display.value = "";
+      }
+
+      function toCalculate() {
+        try{
+        display.value = eval(display.value);
+        } catch(e){
+console.log('No data found');
+        }
+      }
+    </script>
+  </body>
+</html>

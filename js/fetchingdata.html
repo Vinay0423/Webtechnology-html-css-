@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fetching url </h1>
+    <script>
+
+// function fetchingData(){
+//     fetch(url).then(( msg)=>msg.json()).then((str)=> console.log(str))
+// }
+
+// fetchingData("https://api.apis.guru/v2/list.json")
+
+
+// function name(params) {
+//     fetch('https://api.publicapis.org/entries').then((msg)=>msg.json()).then((str)=> console.log(str))
+// }
+// name()
+
+let fetch01= fetch('https://api.publicapis.org/entries').then((msg)=>msg.json()).then((str)=> console.log(str))
+console.log(fetch01);
+
+    </script>
+</body>
+</html>

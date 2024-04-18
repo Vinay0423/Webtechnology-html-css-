@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Storages</h1>
+    <script>
+        //local storage- it will store the values permanently
+
+localStorage.setItem('id',2323)
+localStorage.setItem('name','vinay')
+
+let stroage1=localStorage.getItem('id')
+console.log(stroage1);
+
+localStorage.removeItem('id') // remove on item
+localStorage.clear() //clears all  data
+
+
+
+//session storage- it will store the values untill browser closes
+
+
+sessionStorage.setItem('id',4353)
+sessionStorage.setItem('name','session')
+
+let stroage2=sessionStorage.getItem('id')
+console.log(stroage2);
+
+sessionStorage.removeItem('id') // remove on item
+sessionStorage.clear() //clears all  data
+
+//cookies- it is a piece of data sent from server which is stored in browser
+
+console.log(document.cookie='name=riyan');
+console.log(document.cookie.getItem('name')); // not able to get the value in cookie
+
+
+
+    </script>
+</body>
+</html>

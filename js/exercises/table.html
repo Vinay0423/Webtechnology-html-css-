@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       let table= document.createElement('table')
+       let tr1=document.createElement('tr')
+       let tr2=document.createElement('tr')
+       let tr3=document.createElement('tr')
+
+       let td1= document.createElement('td')
+       td1.innerText='serial no'
+       let td2= document.createElement('td')
+       td2.innerText='username'
+       tr1.appendChild(td1)
+       tr1.appendChild(td2)
+
+       let td3= document.createElement('td')
+       td3.innerText='01'
+       let td4= document.createElement('td')
+       td4.innerText='vinay'
+       tr2.appendChild(td3)
+       tr2.appendChild(td4)
+
+       let td5= document.createElement('td')
+       td5.innerText='02'
+       let td6=document.createElement('td')
+       td6.innerText='xyz'
+       tr3.appendChild(td5)
+       tr3.appendChild(td6)
+
+
+       table.appendChild(tr1)
+       table.appendChild(tr2)
+       table.appendChild(tr3)
+
+       document.body.appendChild(table)
+       table.style.border='1px solid black'
+       td1.style.border='1px solid black'
+       td2.style.border='1px solid black'
+       td3.style.border='1px solid black'
+       td4.style.border='1px solid black'
+       td5.style.border='1px solid black'
+       td6.style.border='1px solid black'
+
+    </script>
+</body>
+</html>
