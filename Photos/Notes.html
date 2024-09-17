@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:5000/notes -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="./Notes_files/style.css">
+    <link rel="stylesheet" href="./Notes_files/all.min.css">
+</head>
+<body>
+    <header>
+        <div>
+            <form action="http://localhost:5000/search" class="search-container" method="get">
+            <input type="text" class="search" placeholder="Enter title or category here...">
+            <button id="submit" type="submit">Search</button>
+        </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="add-notes">
+            <form action="http://localhost:5000/notes" method="post">
+
+              <label for="">Title: <input type="text" placeholder="Enter the title" name="title"></label> 
+               <label for="">Category: <input type="text" name="category" placeholder="Enter the category"></label> 
+               <label for="">Decsription: <textarea placeholder="Enter the description" name="description"> </textarea></label> 
+                <button id="add" type="submit"><i class="fa-solid fa-plus"></i></button>
+            </form>
+        </div>
+
+        
+            
+                <div class="notes">
+                    <div class="notes-header">
+                        <h2 class="title">vinay123 demo</h2>
+                        <div class="category">sample</div>
+                    </div>
+                    <div class="desc">lorem ipsum</div>
+                </div>
+            
+                <div class="notes">
+                    <div class="notes-header">
+                        <h2 class="title">vinay123 demo</h2>
+                        <div class="category">sample</div>
+                    </div>
+                    <div class="desc">lorem ipsum</div>
+                </div>
+            
+                <div class="notes">
+                    <div class="notes-header">
+                        <h2 class="title">testing demo</h2>
+                        <div class="category">sample</div>
+                    </div>
+                    <div class="desc"> madmamdamACMcmdcmCADMmd mNDANadnmAMDNndvmVDMVnmanmdNMADSNMdmnkj qkjkj   q kjEQGJGEJ J   QEKJ    EKJ     K   EGFK    QE  EGFKOUEOT   OI  EOTTOI  EOITE   OI  OIETEOI  ipsum</div>
+                </div>
+            
+                <div class="notes">
+                    <div class="notes-header">
+                        <h2 class="title">vinay</h2>
+                        <div class="category">as as</div>
+                    </div>
+                    <div class="desc"> asass</div>
+                </div>
+            
+                <div class="notes">
+                    <div class="notes-header">
+                        <h2 class="title">bcb</h2>
+                        <div class="category">vn</div>
+                    </div>
+                    <div class="desc"> nvnn</div>
+                </div>
+            
+                <div class="notes">
+                    <div class="notes-header">
+                        <h2 class="title">testing</h2>
+                        <div class="category">vavs</div>
+                    </div>
+                    <div class="desc"> sasas</div>
+                </div>
+            
+        
+    </main>
+
+</body></html>

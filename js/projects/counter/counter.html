@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+           background-color: coral;
+        }
+
+        .container{
+           
+            position: relative;
+            top: 300px;
+            text-align: center;
+        }
+
+
+        .counter{
+            font-size: 40px;
+            font-weight: 700;
+       font-style: italic;
+        }
+
+        .buttons{
+            display: flex;
+            justify-content: space-evenly
+        }
+
+        #value{
+            font-size: 60px;
+            background-color: darkgreen;
+            display: inline-block;
+            width: 60px;
+            height: 80px;
+            color: cyan;
+        }
+
+        button{
+            margin-top: 20px;
+           font-size: 30px;
+            border-radius: 10px;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    
+  <main class="container">
+
+    <div class="counter">Counter</div>
+    <span id="value">0</span>
+
+    <div class="buttons">
+       <button class="btn decrease" id="decrement">Decrement</button>
+       <button class="btn reset" id="reset">Reset</button>
+       <button class="btn increase" id="increment">Increment</button>
+    </div>
+  </main>
+
+
+    <script src="./counter.js">
+
+        
+    </script>
+</body>
+</html>

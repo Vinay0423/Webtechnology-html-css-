@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+let str='helloo'
+ const charCount = {};
+ let duplicate=[]
+for(let chr of str){
+//   console.log(chr)
+//   console.log(charCount[chr])
+  charCount[chr] ? charCount[chr]++ : charCount[chr]=1;
+//   console.log(charCount)
+}
+for(let char in charCount){
+//   console.log(char)
+  charCount[char]>1 ?  console.log(char,charCount[char]): undefined
+}
+console.log(duplicate);
+
+  </script>
+</body>
+</html>
+
+
