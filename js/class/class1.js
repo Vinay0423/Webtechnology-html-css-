@@ -62,4 +62,3 @@ SubClass.cand()
 // No, a static function in JavaScript does not have access to instance-specific variables (i.e., variables declared in the constructor). 
 // This is because static methods are tied to the class itself, not to any specific instance of the class.
 
-//demo
